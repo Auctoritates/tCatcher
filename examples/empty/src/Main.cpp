@@ -6,6 +6,7 @@ void Main()
     
     const Texture chimpan(L"../Pictures/animal_chimpanzee.png");
     const Texture bgSchool(L"../Pictures/bg_school.jpg");
+    const Texture parts_tanni(L"../Pictures/tanni.png");
     
     Array<Circle> tni;
     
@@ -61,7 +62,6 @@ void Main()
         
         for(auto &t:tni){
             t.moveBy(0, 10);
-            
             t.draw(Palette::Blue);
             tfont(L"単位").drawAt(t.x,t.y);
         }
